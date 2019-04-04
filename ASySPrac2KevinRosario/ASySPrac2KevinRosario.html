@@ -66,7 +66,7 @@ table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px soli
 
 
 
-  </style></head><body><div class="content"><h1>Pr&aacute;ctica 2: Se&ntilde;ales continuas</h1><!--introduction--><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Descripci&oacute;n general de MATLAB</a></li><li><a href="#2">Desarrollo</a></li></ul></div><h2>Descripci&oacute;n general de MATLAB<a name="1"></a></h2><p>En los a&ntilde;os 70 cleve moler desarrollo la primera version de Matlab -Matrix Laboratory- para calcular matices de una forma simple e interactiva, con el fin de que sus estudiantes pudieran trabajar con matrices sin tener que usar fortran. En 1984 jack litle redise&ntilde;o y mejoro matlab haci&eacute;ndolo disponible en la nueva computadora de IBM , el y moler fundaron matworks .EL objetivo de todos estos programas es facilitar el uso de las herramientas computacionales para estudiantes investigadores acad&eacute;micos y cualquier otra persona con las ganas de aprender.El propoito es invertir mas tiempo en el desarrollo de la idea que en entender como programar.</p><h2>Desarrollo<a name="2"></a></h2><p>1 .Crea una funci&oacute;n que se llame fun1 y reciba dos parametros <img src="ASySPrac2KevinRosario_eq84050.png" alt="$\omega$"> y <img src="ASySPrac2KevinRosario_eq34276.png" alt="$a$"> la funci&oacute;n debe regresar la evaluaci&oacute;n <img src="ASySPrac2KevinRosario_eq35372.png" alt="$F(\omega)=a/(a^2+\omega^2)$">, esta funci&oacute;n debe trabajr con <img src="ASySPrac2KevinRosario_eq39455.png" alt="$a\in R$"> y <img src="ASySPrac2KevinRosario_eq87567.png" alt="$t\in  R^n$">. Debe mostrar su c&oacute;digo en el reporte (sin ejecutar).</p><pre class="language-matlab"><span class="keyword">function</span> f=fun1(a,w)
+  </style></head><body><div class="content"><h1>Pr&aacute;ctica 2: Se&ntilde;ales continuas</h1><!--introduction--><p>Kevin Rosario Chavez 2MV1</p><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Descripci&oacute;n general de MATLAB</a></li><li><a href="#2">Desarrollo</a></li></ul></div><h2>Descripci&oacute;n general de MATLAB<a name="1"></a></h2><p>En los a&ntilde;os 70 cleve moler desarrollo la primera version de Matlab -Matrix Laboratory- para calcular matices de una forma simple e interactiva, con el fin de que sus estudiantes pudieran trabajar con matrices sin tener que usar fortran. En 1984 jack litle redise&ntilde;o y mejoro matlab haci&eacute;ndolo disponible en la nueva computadora de IBM , el y moler fundaron matworks .EL objetivo de todos estos programas es facilitar el uso de las herramientas computacionales para estudiantes investigadores acad&eacute;micos y cualquier otra persona con las ganas de aprender.El propoito es invertir mas tiempo en el desarrollo de la idea que en entender como programar.</p><h2>Desarrollo<a name="2"></a></h2><p>1 .Crea una funci&oacute;n que se llame fun1 y reciba dos parametros <img src="ASySPrac2KevinRosario_eq84050.png" alt="$\omega$"> y <img src="ASySPrac2KevinRosario_eq34276.png" alt="$a$"> la funci&oacute;n debe regresar la evaluaci&oacute;n <img src="ASySPrac2KevinRosario_eq35372.png" alt="$F(\omega)=a/(a^2+\omega^2)$">, esta funci&oacute;n debe trabajr con <img src="ASySPrac2KevinRosario_eq39455.png" alt="$a\in R$"> y <img src="ASySPrac2KevinRosario_eq87567.png" alt="$t\in  R^n$">. Debe mostrar su c&oacute;digo en el reporte (sin ejecutar).</p><pre class="language-matlab"><span class="keyword">function</span> f=fun1(a,w)
    f=a^2/(a^2+w^2)
 <span class="keyword">end</span>
 </pre><p>2 .Construya una funci&oacute;n que gr&aacute;fique funciones de <img src="ASySPrac2KevinRosario_eq96850.png" alt="$f:R\rightarrow R$"> en el formato de su elecci&oacute;n y pruebe su c&oacute;digo mostrando la gr&aacute;fica de  <img src="ASySPrac2KevinRosario_eq41889.png" alt="$F(\omega)$"> vs <img src="ASySPrac2KevinRosario_eq84050.png" alt="$\omega$"> en el intervalo <img src="ASySPrac2KevinRosario_eq72387.png" alt="$[-2,2]$"> para <img src="ASySPrac2KevinRosario_eq32997.png" alt="$a=1$">, no debe incluir el c&oacute;digo, solo el uso de la funci&oacute;n para mostrar la gr&aacute;fica</p><pre class="codeinput">fa= @(a,w) a./(a.^2+w.^2);
@@ -137,7 +137,7 @@ u =
  title(<span class="string">'x(t) desfasada a la izq'</span>)
  figure
  plot(t,x(t/1.5))
- axis <span class="string">auto</span>
+  axis <span class="string">auto</span>
 
  title(<span class="string">'x(t) expandida horizontalmente 1.5'</span>)
  figure
@@ -261,8 +261,8 @@ E = integral(s,-inf,inf);
 </pre><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2014a</a><br></p></div><!--
 ##### SOURCE BEGIN #####
 %% Práctica 2: Señales continuas
-%
-% 
+% Kevin Rosario Chavez
+% 2MV1
 %%
 %% Descripción general de MATLAB
 % En los años 70 cleve moler desarrollo la primera version de Matlab
@@ -338,7 +338,7 @@ figure
  title('x(t) desfasada a la izq')
  figure
  plot(t,x(t/1.5))
- axis auto
+  axis auto
  
  title('x(t) expandida horizontalmente 1.5')
  figure
