@@ -6,7 +6,7 @@
    <!--
 This HTML was auto-generated from MATLAB code.
 To make changes, update the MATLAB code and republish this document.
-      --><title>Pr&aacute;ctica 2: Se&ntilde;ales continuas</title><meta name="generator" content="MATLAB 8.3"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-04-02"><meta name="DC.source" content="ASySPrac2KevinRosario.m"><style type="text/css">
+      --><title>Pr&aacute;ctica 2: Se&ntilde;ales continuas</title><meta name="generator" content="MATLAB 8.3"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-04-03"><meta name="DC.source" content="ASySPrac2KevinRosario.m"><style type="text/css">
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
 
 html { min-height:100%; margin-bottom:1px; }
@@ -69,7 +69,14 @@ table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px soli
   </style></head><body><div class="content"><h1>Pr&aacute;ctica 2: Se&ntilde;ales continuas</h1><!--introduction--><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Descripci&oacute;n general de MATLAB</a></li><li><a href="#2">Desarrollo</a></li></ul></div><h2>Descripci&oacute;n general de MATLAB<a name="1"></a></h2><p>En los a&ntilde;os 70 cleve moler desarrollo la primera version de Matlab -Matrix Laboratory- para calcular matices de una forma simple e interactiva, con el fin de que sus estudiantes pudieran trabajar con matrices sin tener que usar fortran. En 1984 jack litle redise&ntilde;o y mejoro matlab haci&eacute;ndolo disponible en la nueva computadora de IBM , el y moler fundaron matworks .EL objetivo de todos estos programas es facilitar el uso de las herramientas computacionales para estudiantes investigadores acad&eacute;micos y cualquier otra persona con las ganas de aprender.El propoito es invertir mas tiempo en el desarrollo de la idea que en entender como programar.</p><h2>Desarrollo<a name="2"></a></h2><p>1 .Crea una funci&oacute;n que se llame fun1 y reciba dos parametros <img src="ASySPrac2KevinRosario_eq84050.png" alt="$\omega$"> y <img src="ASySPrac2KevinRosario_eq34276.png" alt="$a$"> la funci&oacute;n debe regresar la evaluaci&oacute;n <img src="ASySPrac2KevinRosario_eq35372.png" alt="$F(\omega)=a/(a^2+\omega^2)$">, esta funci&oacute;n debe trabajr con <img src="ASySPrac2KevinRosario_eq39455.png" alt="$a\in R$"> y <img src="ASySPrac2KevinRosario_eq87567.png" alt="$t\in  R^n$">. Debe mostrar su c&oacute;digo en el reporte (sin ejecutar).</p><pre class="language-matlab"><span class="keyword">function</span> f=fun1(a,w)
    f=a^2/(a^2+w^2)
 <span class="keyword">end</span>
-</pre><p>2 .Construya una funci&oacute;n que gr&aacute;fique funciones de <img src="ASySPrac2KevinRosario_eq96850.png" alt="$f:R\rightarrow R$"> en el formato de su elecci&oacute;n y pruebe su c&oacute;digo mostrando la gr&aacute;fica de  <img src="ASySPrac2KevinRosario_eq41889.png" alt="$F(\omega)$"> vs <img src="ASySPrac2KevinRosario_eq84050.png" alt="$\omega$"> en el intervalo <img src="ASySPrac2KevinRosario_eq72387.png" alt="$[-2,2]$"> para <img src="ASySPrac2KevinRosario_eq32997.png" alt="$a=1$">, no debe incluir el c&oacute;digo, solo el uso de la funci&oacute;n para mostrar la gr&aacute;fica</p><p>3 .Construya una funci&oacute;n que gr&aacute;fique funciones de <img src="ASySPrac2KevinRosario_eq92976.png" alt="$f:R\rightarrow R^2$"> en el formato de su elecci&oacute;n y pruebe su c&oacute;digo mostrando la gr&aacute;fica de la transformada de Fourier <img src="ASySPrac2KevinRosario_eq90150.png" alt="$F(w)$"> en <img src="ASySPrac2KevinRosario_eq05501.png" alt="$[-10,10]$"> de la funci&oacute;n <img src="ASySPrac2KevinRosario_eq71800.png" alt="$f(t)=e^{-2t}u(t)$">, puede utilizar una funci&oacute;n anonima para este fin, no debe incluir el c&oacute;digo, solo el uso de la funci&oacute;n para mostrarla gr&aacute;fica. Reporte la gr&aacute;fica de <img src="ASySPrac2KevinRosario_eq13319.png" alt="$f(t)$"> de <img src="ASySPrac2KevinRosario_eq82800.png" alt="$[-1,5]$"> (recuerde que ya tiene una funci&oacute;n para esto). Reporte del espectro de magnitud y del espectro de fase en <img src="ASySPrac2KevinRosario_eq05501.png" alt="$[-10,10]$"> (puedes con sultar con help la descripci&oacute;n de abs, angle, atan2). Solo reporte las graficas.</p><p>4 .Realiza las mismas operaciones que Lathi en las secciones M1.1 a M1.4 que se encuentra al final del cap&iacute;tulo 1 y antes de la secci&oacute;n de problemas, cambie los inline por funciones anonimas</p><pre class="codeinput">f = @(t) exp(-t).*cos(2*pi*t)
+</pre><p>2 .Construya una funci&oacute;n que gr&aacute;fique funciones de <img src="ASySPrac2KevinRosario_eq96850.png" alt="$f:R\rightarrow R$"> en el formato de su elecci&oacute;n y pruebe su c&oacute;digo mostrando la gr&aacute;fica de  <img src="ASySPrac2KevinRosario_eq41889.png" alt="$F(\omega)$"> vs <img src="ASySPrac2KevinRosario_eq84050.png" alt="$\omega$"> en el intervalo <img src="ASySPrac2KevinRosario_eq72387.png" alt="$[-2,2]$"> para <img src="ASySPrac2KevinRosario_eq32997.png" alt="$a=1$">, no debe incluir el c&oacute;digo, solo el uso de la funci&oacute;n para mostrar la gr&aacute;fica</p><pre class="codeinput">fa= @(a,w) a./(a.^2+w.^2);
+w=-2:0.1:2;
+figura(w,fa(1,w))
+</pre><img vspace="5" hspace="5" src="ASySPrac2KevinRosario_01.png" alt=""> <p>3 .Construya una funci&oacute;n que gr&aacute;fique funciones de <img src="ASySPrac2KevinRosario_eq92976.png" alt="$f:R\rightarrow R^2$"> en el formato de su elecci&oacute;n y pruebe su c&oacute;digo mostrando la gr&aacute;fica de la transformada de Fourier <img src="ASySPrac2KevinRosario_eq90150.png" alt="$F(w)$"> en <img src="ASySPrac2KevinRosario_eq05501.png" alt="$[-10,10]$"> de la funci&oacute;n <img src="ASySPrac2KevinRosario_eq71800.png" alt="$f(t)=e^{-2t}u(t)$">, puede utilizar una funci&oacute;n anonima para este fin, no debe incluir el c&oacute;digo, solo el uso de la funci&oacute;n para mostrarla gr&aacute;fica. Reporte la gr&aacute;fica de <img src="ASySPrac2KevinRosario_eq13319.png" alt="$f(t)$"> de <img src="ASySPrac2KevinRosario_eq82800.png" alt="$[-1,5]$"> (recuerde que ya tiene una funci&oacute;n para esto). Reporte del espectro de magnitud y del espectro de fase en <img src="ASySPrac2KevinRosario_eq05501.png" alt="$[-10,10]$"> (puedes con sultar con help la descripci&oacute;n de abs, angle, atan2). Solo reporte las graficas.</p><pre class="codeinput">ga=@(a,w) -w./(a.^2+w.^2);
+w=-2:0.1:2;
+plot3(1./w,cos(1./w),-sin(1./w))
+<span class="comment">%</span>
+</pre><img vspace="5" hspace="5" src="ASySPrac2KevinRosario_02.png" alt=""> <p>4 .Realiza las mismas operaciones que Lathi en las secciones M1.1 a M1.4 que se encuentra al final del cap&iacute;tulo 1 y antes de la secci&oacute;n de problemas, cambie los inline por funciones anonimas</p><p>M1.1</p><pre class="codeinput">f = @(t) exp(-t).*cos(2*pi*t)
 t=0;
 f(t)
 t=(-2:2);
@@ -85,19 +92,6 @@ plot(t,f(t))
 xlabel(<span class="string">'t'</span>)
 ylabel(<span class="string">'f(t)'</span>)
 grid
-<span class="comment">%  M1 .4</span>
-u = @(t)t&gt;=0
-t = (-2:2);
-figure
-plot (t,u(t))
-xlabel(<span class="string">'t'</span>)
-ylabel(<span class="string">'u(t)'</span>)
- t = (-2:0.01:2);
-figure
- plot (t,u(t))
- xlabel(<span class="string">'t'</span>)
- ylabel(<span class="string">'u(t)'</span>)
- axis ([-2 2 -0.1 1.1])
 </pre><pre class="codeoutput">
 f = 
 
@@ -113,12 +107,158 @@ ans =
 
     7.3891    2.7183    1.0000    0.3679    0.1353
 
-
+</pre><img vspace="5" hspace="5" src="ASySPrac2KevinRosario_03.png" alt=""> <img vspace="5" hspace="5" src="ASySPrac2KevinRosario_04.png" alt=""> <p>M1.4</p><pre class="codeinput">u = @(t)t&gt;=0
+t = (-2:2);
+figure
+plot (t,u(t))
+xlabel(<span class="string">'t'</span>)
+ylabel(<span class="string">'u(t)'</span>)
+ t = (-2:0.01:2);
+figure
+ plot (t,u(t))
+ xlabel(<span class="string">'t'</span>)
+ ylabel(<span class="string">'u(t)'</span>)
+ axis ([-2 2 -0.1 1.1])
+</pre><pre class="codeoutput">
 u = 
 
     @(t)t&gt;=0
 
-</pre><img vspace="5" hspace="5" src="ASySPrac2KevinRosario_01.png" alt=""> <img vspace="5" hspace="5" src="ASySPrac2KevinRosario_02.png" alt=""> <img vspace="5" hspace="5" src="ASySPrac2KevinRosario_03.png" alt=""> <img vspace="5" hspace="5" src="ASySPrac2KevinRosario_04.png" alt=""> <p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2014a</a><br></p></div><!--
+</pre><img vspace="5" hspace="5" src="ASySPrac2KevinRosario_05.png" alt=""> <img vspace="5" hspace="5" src="ASySPrac2KevinRosario_06.png" alt=""> <p>5 .Resuelve el problema 1.2.2 usando las herramientas del paso anterior.</p><pre class="codeinput"> x = @(t) t.*(u(t)-u(t-2)-u(t+4)+u(t));
+ t = (-4:.01:4);
+ figure
+ plot(t,x(t))
+ axis <span class="string">auto</span>
+ title(<span class="string">'x(t)'</span>)
+ figure
+ plot(t,x(t-4))
+ axis <span class="string">auto</span>
+
+ title(<span class="string">'x(t) desfasada a la izq'</span>)
+ figure
+ plot(t,x(t/1.5))
+ axis <span class="string">auto</span>
+
+ title(<span class="string">'x(t) expandida horizontalmente 1.5'</span>)
+ figure
+ plot(t,x(-t))
+ axis <span class="string">auto</span>
+
+ title(<span class="string">'x(t) invertida'</span>)
+  figure
+ plot(t,x(2*t-4))
+ axis <span class="string">auto</span>
+
+ title(<span class="string">'x(t) comprimita y trazladado hacia la derecha'</span>)
+   figure
+ plot(t,x(2-t))
+ axis <span class="string">auto</span>
+
+ title(<span class="string">'x(t) invertida y trazladado hacia la derecha'</span>)
+</pre><img vspace="5" hspace="5" src="ASySPrac2KevinRosario_07.png" alt=""> <img vspace="5" hspace="5" src="ASySPrac2KevinRosario_08.png" alt=""> <img vspace="5" hspace="5" src="ASySPrac2KevinRosario_09.png" alt=""> <img vspace="5" hspace="5" src="ASySPrac2KevinRosario_10.png" alt=""> <img vspace="5" hspace="5" src="ASySPrac2KevinRosario_11.png" alt=""> <img vspace="5" hspace="5" src="ASySPrac2KevinRosario_12.png" alt=""> <p>6 .Escriba una funci&oacute;n que se llame energia que reciba como argumento una funci&oacute;n (anonima o simbolica) y que regrese el calculo de la energ&iacute;a, para esto puede resultar &uacute;til investigar las instrucciones int , integral Se presupone utilizar el c&oacute;digo solo con funciones de energia. Muestre el c&oacute;digo sin ejecutar, y posteriormente resuelva el problema 1.1.3</p><pre class="language-matlab"><span class="keyword">function</span> E= ENERGIA(f)
+ s=abs(f).^2;
+E = integral(s,-inf,inf);
+<span class="keyword">end</span>
+</pre><p>Figura a</p><pre class="codeinput">t=0:.01:2;
+f1= @(t)(u(t)-u(t-2));
+f2=@(t)(u(t)-u(t-1))-(u(t-1)-u(t-2));
+f3=@(t) f1(t)+f2(t)
+ENERGIA(f3)
+figure
+plot(t,f3(t))
+grid <span class="string">on</span>
+ axis ([-0.1 2.1 -0.1 2.1])
+f4=@(t) f1(t)-f2(t)
+figure
+plot(t,f4(t))
+grid <span class="string">on</span>
+ axis ([-0.1 2.1 -0.1 2.1])
+ENERGIA(f4)
+</pre><pre class="codeoutput">
+f3 = 
+
+    @(t)f1(t)+f2(t)
+
+
+ans =
+
+    2.0000
+
+
+f4 = 
+
+    @(t)f1(t)-f2(t)
+
+
+ans =
+
+    2.0000
+
+</pre><img vspace="5" hspace="5" src="ASySPrac2KevinRosario_13.png" alt=""> <img vspace="5" hspace="5" src="ASySPrac2KevinRosario_14.png" alt=""> <p>Figura b</p><pre class="codeinput">t=0:.01:2*pi;
+f1= @(t)sin(t).*(u(t)-u(t-2*pi));
+f2=@(t)u(t)-u(t-2*pi);
+f3=@(t) f1(t)+f2(t);
+ENERGIA(f3)
+figure
+plot(t,f3(t))
+grid <span class="string">on</span>
+ axis ([-0.1 7.5 -0.1 2.1])
+f4=@(t) f1(t)-f2(t)
+figure
+plot(t,f4(t))
+grid <span class="string">on</span>
+ axis ([-0.1 7.5 -2.1 0.1])
+ENERGIA(f4)
+</pre><pre class="codeoutput">
+ans =
+
+    6.2832
+
+
+f4 = 
+
+    @(t)f1(t)-f2(t)
+
+
+ans =
+
+   -6.2832
+
+</pre><img vspace="5" hspace="5" src="ASySPrac2KevinRosario_15.png" alt=""> <img vspace="5" hspace="5" src="ASySPrac2KevinRosario_16.png" alt=""> <p>Figura c</p><pre class="codeinput">t=0:.01:pi;
+f1= @(t)sin(t).*(u(t)-u(t-pi));
+f2=@(t)u(t)-u(t-pi);
+f3=@(t) f1(t)+f2(t);
+ENERGIA(f3)
+figure
+plot(t,f3(t))
+grid <span class="string">on</span>
+ axis ([-0.1 3.3 -0.1 2.1])
+f4=@(t) f1(t)-f2(t)
+figure
+plot(t,f4(t))
+grid <span class="string">on</span>
+ axis ([-0.1 3.3 -1.1 0.1])
+ENERGIA(f4)
+</pre><pre class="codeoutput">
+ans =
+
+    5.1416
+
+
+f4 = 
+
+    @(t)f1(t)-f2(t)
+
+
+ans =
+
+   -1.1416
+
+</pre><img vspace="5" hspace="5" src="ASySPrac2KevinRosario_17.png" alt=""> <img vspace="5" hspace="5" src="ASySPrac2KevinRosario_18.png" alt=""> <p>7. Escriba una funci&oacute;n que se llame potencia que reciba como argumento una funci&oacute;n (anonima o simbolica) y que regrese el calculo de la potencia para esto puede resultar &uacute;til investigar las instrucciones int , integral Se presupone utilizar el c&oacute;digo solo con funciones de potencia. Muestre el c&oacute;digo sin ejecutar, y posteriormente resuelva el problema 1.1.4</p><pre class="language-matlab"><span class="keyword">function</span> P= Potencia(f)
+ s=abs(f).^2;
+E = integral(s,-inf,inf);
+<span class="keyword">end</span>
+</pre><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2014a</a><br></p></div><!--
 ##### SOURCE BEGIN #####
 %% Práctica 2: Señales continuas
 %
@@ -139,9 +279,20 @@ u =
 %
 % 2 .Construya una función que gráfique funciones de $f:R\rightarrow R$ en el formato de su elección y pruebe su código mostrando la gráfica de  $F(\omega)$ vs $\omega$ en el intervalo $[-2,2]$ para $a=1$, no debe incluir el código, solo el uso de la función para mostrar la gráfica
 %
+fa= @(a,w) a./(a.^2+w.^2);
+w=-2:0.1:2;
+figura(w,fa(1,w))
+%%
 % 3 .Construya una función que gráfique funciones de $f:R\rightarrow R^2$ en el formato de su elección y pruebe su código mostrando la gráfica de la transformada de Fourier $F(w)$ en $[-10,10]$ de la función $f(t)=e^{-2t}u(t)$, puede utilizar una función anonima para este fin, no debe incluir el código, solo el uso de la función para mostrarla gráfica. Reporte la gráfica de $f(t)$ de $[-1,5]$ (recuerde que ya tiene una función para esto). Reporte del espectro de magnitud y del espectro de fase en $[-10,10]$ (puedes con sultar con help la descripción de abs, angle, atan2). Solo reporte las graficas.
+ga=@(a,w) -w./(a.^2+w.^2);
+w=-2:0.1:2;
+plot3(1./w,cos(1./w),-sin(1./w))
 %
+%%
 % 4 .Realiza las mismas operaciones que Lathi en las secciones M1.1 a M1.4 que se encuentra al final del capítulo 1 y antes de la sección de problemas, cambie los inline por funciones anonimas
+%
+%%
+    % M1.1
 f = @(t) exp(-t).*cos(2*pi*t)
 t=0;
 f(t)
@@ -158,7 +309,8 @@ plot(t,f(t))
 xlabel('t') 
 ylabel('f(t)')
 grid
-%  M1 .4
+%%
+% M1.4
 u = @(t)t>=0
 t = (-2:2);
 figure
@@ -171,6 +323,109 @@ figure
  xlabel('t')
  ylabel('u(t)')
  axis ([-2 2 -0.1 1.1])
+%%
+% 5 .Resuelve el problema 1.2.2 usando las herramientas del paso anterior.
+ x = @(t) t.*(u(t)-u(t-2)-u(t+4)+u(t));
+ t = (-4:.01:4);
+ figure
+ plot(t,x(t))
+ axis auto
+ title('x(t)')
+ figure
+ plot(t,x(t-4))
+ axis auto
+ 
+ title('x(t) desfasada a la izq')
+ figure
+ plot(t,x(t/1.5))
+ axis auto
+ 
+ title('x(t) expandida horizontalmente 1.5')
+ figure
+ plot(t,x(-t))
+ axis auto
+ 
+ title('x(t) invertida')
+  figure
+ plot(t,x(2*t-4))
+ axis auto
+ 
+ title('x(t) comprimita y trazladado hacia la derecha')
+   figure
+ plot(t,x(2-t))
+ axis auto
+ 
+ title('x(t) invertida y trazladado hacia la derecha')
+%%
+% 6 .Escriba una función que se llame energia que reciba como argumento una función (anonima o simbolica) y que regrese el calculo de la energía, para esto puede resultar útil investigar las instrucciones int , integral Se presupone utilizar el código solo con funciones de energia. Muestre el código sin ejecutar, y posteriormente resuelva el problema 1.1.3
+%
+%   function E= ENERGIA(f)
+%    s=abs(f).^2;
+%   E = integral(s,-inf,inf);
+%   end
+%
+%%
+    % Figura a
+t=0:.01:2;
+f1= @(t)(u(t)-u(t-2));
+f2=@(t)(u(t)-u(t-1))-(u(t-1)-u(t-2));
+f3=@(t) f1(t)+f2(t)
+ENERGIA(f3)
+figure
+plot(t,f3(t))
+grid on
+ axis ([-0.1 2.1 -0.1 2.1])
+f4=@(t) f1(t)-f2(t)
+figure
+plot(t,f4(t))
+grid on
+ axis ([-0.1 2.1 -0.1 2.1])
+ENERGIA(f4)
+%%
+% Figura b
+
+t=0:.01:2*pi;
+f1= @(t)sin(t).*(u(t)-u(t-2*pi));
+f2=@(t)u(t)-u(t-2*pi);
+f3=@(t) f1(t)+f2(t);
+ENERGIA(f3)
+figure
+plot(t,f3(t))
+grid on
+ axis ([-0.1 7.5 -0.1 2.1])
+f4=@(t) f1(t)-f2(t)
+figure
+plot(t,f4(t))
+grid on
+ axis ([-0.1 7.5 -2.1 0.1])
+ENERGIA(f4)
+%%
+% Figura c
+
+t=0:.01:pi;
+f1= @(t)sin(t).*(u(t)-u(t-pi));
+f2=@(t)u(t)-u(t-pi);
+f3=@(t) f1(t)+f2(t);
+ENERGIA(f3)
+figure
+plot(t,f3(t))
+grid on
+ axis ([-0.1 3.3 -0.1 2.1])
+f4=@(t) f1(t)-f2(t)
+figure
+plot(t,f4(t))
+grid on
+ axis ([-0.1 3.3 -1.1 0.1])
+ENERGIA(f4)
+%%
+% 7. Escriba una función que se llame potencia que reciba como argumento una función (anonima o simbolica) y que regrese el calculo de la potencia para esto puede resultar útil investigar las instrucciones int , integral Se presupone utilizar el código solo con funciones de potencia. Muestre el código sin ejecutar, y posteriormente resuelva el problema 1.1.4
+%
+%   function P= Potencia(f)
+%    s=abs(f).^2;
+%   E = integral(s,-inf,inf);
+%   end
+%
+
 
 ##### SOURCE END #####
 --></body></html>
